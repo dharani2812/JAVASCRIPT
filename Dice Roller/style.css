@@ -1,0 +1,55 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu Sans", sans-serif;
+    background-color: #E2DCDE;
+    color: black;
+}
+#container{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 25%;
+    background-color: #CEB1BE;
+    width: 55%;
+    height: 500px;
+    transition: 0.5s;
+    
+}
+h3{
+    font-size: 25px;
+}
+#numofroller{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    background-color: #E2DCDE;
+    border: none;
+}
+#rollbtn{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    border-width: 1px;
+    border-color: #CEB1BE;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#rollbtn:hover{
+    background-color: hsl(333, 23%, 80%);
+    box-shadow: 1px 3px 5px black;
+
+}
+#rollbtn:active{
+    background-color: hsl(333, 23%, 60%);
+}
+#container:hover{
+    box-shadow: 2px 5px 40px black;
+    margin-top: 9.9%;
+}
+#diceimages img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}

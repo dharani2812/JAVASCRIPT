@@ -1,0 +1,42 @@
+body{
+    font-family: "Poppins", sans-serif;    
+    background-color: #e5d4ef;
+}
+form{
+    background-color: #ffd4ff;
+    margin-left: 30%;
+    text-align: center;
+    margin-top: 10%;
+    max-width: 50%;
+    padding: 10px;
+    height: 50%;
+    box-shadow: 3px 5px 15px black ;
+}
+#content{
+    width: 30%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ddbcf0;
+}
+label{
+    margin-top: 20%;
+}
+#tofahrenheit{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#tocelsius{
+    margin-bottom: 5%;
+}
+button{
+    font-size: 20px;
+    width: 30%;
+    height: 40px;
+    background-color: #d393f8;
+    border: 1px solid #ddbcf0;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #e5d4ef;
+}

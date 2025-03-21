@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <h2> ROCK-PAPER-SCISSOR </h2>
+    <h2>ROCK-PAPER-SCISSORS</h2>
+    
     <div id="choices">
         <button onclick="playgame('rock')">👊</button>
         <button onclick="playgame('paper')">🖐</button>
         <button onclick="playgame('scissor')">✌</button>
     </div>
-    <div id="playerDisplay">PLAYER :</div>
-    <div id="computerDisplay">COMPUTER :</div>
-    <div id="resultDisplay">RESULT :</div>
-    <div id="playerscore">PLAYERSCORE :</div>
-    <div id="computerscore">COMPUTERSCORE :</div>
 
-
-
-
+    <div class="display-container">
+        <div id="playerDisplay">PLAYER :</div>
+        <div id="computerDisplay">COMPUTER :</div>
+        <div id="resultDisplay">RESULT :</div>
+        <div id="playerscore">PLAYER SCORE : 0</div>
+        <div id="computerscore">COMPUTER SCORE : 0</div>
+    </div>
 
     <script src="script.js"></script>
 </body>

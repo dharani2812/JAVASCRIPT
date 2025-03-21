@@ -1,58 +1,126 @@
-body{
-    font-family: 'Arial';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
 }
-h2{
-    font-size: 2em;
-    color: rgb(57, 4, 107);
+
+h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.6);
 }
-#choices{
+
+#choices {
     margin-bottom: 30px;
 }
-#choices button{
-    width: 130px;
-    height: 130px;
-    font-size: 5em;
+
+#choices button {
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
     border: none;
     background-color: #5a57fd;
     border-radius: 50%;
-    margin: 0px 20px;
+    margin: 10px;
     cursor: pointer;
-    transition:background-color 0.5s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-#choices button:hover{
+
+#choices button:hover {
     background-color: hsl(241, 98%, 77%);
+    transform: scale(1.1);
 }
-#playerDisplay{
-    font-size: 2em;
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#playerDisplay, 
+#computerDisplay, 
+#resultDisplay, 
+#playerscore, 
+#computerscore {
+    font-size: 1.8em;
     font-weight: bold;
     margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
 }
-#computerDisplay{
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 10px;
+
+#playerDisplay {
+    color: #00ff00;
 }
-#resultDisplay{
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 10px;
+
+#computerDisplay {
+    color: #ff3333;
 }
-#playerscore{
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 10px;
+
+#resultDisplay {
+    color: #ffcc00;
 }
-#computerscore{
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 10px;
+
+#playerscore {
+    color: #00ff00;
 }
-.green,#playerscore{
-    color: green;
+
+#computerscore {
+    color: #ff3333;
 }
-.red,#computerscore{
-    color: red;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    #choices button {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5em;
+    }
+
+    #playerDisplay, 
+    #computerDisplay, 
+    #resultDisplay, 
+    #playerscore, 
+    #computerscore {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    #choices button {
+        width: 70px;
+        height: 70px;
+        font-size: 2em;
+    }
+
+    #playerDisplay, 
+    #computerDisplay, 
+    #resultDisplay, 
+    #playerscore, 
+    #computerscore {
+        font-size: 1.2em;
+    }
 }

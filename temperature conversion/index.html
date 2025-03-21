@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Temperature Converter</title>
 </head>
 <body>
     <form>
-        <h1>Temperature Conversion</h1><br>
-        <input type="number" id="content" value="0"><br>
-        <input type="radio" id="tofahrenheit" name="same">
-        <label for="tofahrenheit" >Celsius ➡ Fahrenheit</label><br>
-        <input type="radio" id="tocelsius" name="same">
-        <label for="tocelsius" >Fahrenheit ➡ Celsius</label><br>
-        <button type="button" id="submit" onclick="answer()">Submit</button><br>
-        <p id="unit"></p>
-    </form>
-    
-    
+        <h1>🌡️ Temperature Converter</h1>
+        <input type="number" id="content" placeholder="Enter Value"><br>
 
+        <div class="radio-container">
+            <input type="radio" id="tofahrenheit" name="conversion">
+            <label for="tofahrenheit">Celsius ➡ Fahrenheit</label><br>
+
+            <input type="radio" id="tocelsius" name="conversion">
+            <label for="tocelsius">Fahrenheit ➡ Celsius</label>
+        </div>
+
+        <button type="button" id="submit" onclick="answer()">Convert</button>
+        <p id="unit">Result: --</p>
+    </form>
 
     <script src="script.js"></script>
 </body>

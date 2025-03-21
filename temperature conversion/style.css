@@ -1,42 +1,127 @@
-body{
-    font-family: "Poppins", sans-serif;    
-    background-color: #e5d4ef;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-form{
-    background-color: #ffd4ff;
-    margin-left: 30%;
+
+body {
+    background: linear-gradient(135deg, #d393f8, #e5d4ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    margin-top: 10%;
-    max-width: 50%;
-    padding: 10px;
-    height: 50%;
-    box-shadow: 3px 5px 15px black ;
+    max-width: 400px;
+    width: 90%;
 }
-#content{
-    width: 30%;
-    height: 30px;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ddbcf0;
+
+h1 {
+    color: #6a0dad;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-label{
-    margin-top: 20%;
-}
-#tofahrenheit{
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-#tocelsius{
-    margin-bottom: 5%;
-}
-button{
-    font-size: 20px;
-    width: 30%;
+
+#content {
+    width: 100%;
     height: 40px;
-    background-color: #d393f8;
-    border: 1px solid #ddbcf0;
-    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #d393f8;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
 }
-button:hover{
-    background-color: #e5d4ef;
+
+.radio-container {
+    margin: 15px 0;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    font-size: 20px;
+    width: 100%;
+    height: 45px;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8c38ff;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #6a0dad;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #content {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
